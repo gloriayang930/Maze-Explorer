@@ -29,7 +29,7 @@ class Graph:
         print("please select from these letters: {0}".format(valid_choices))
       else:
         for room in node.edges.keys():
-          if room.startswith(choice): #!
+          if room.startswith(choice): #GOOD TRICK!
             current_room = room
             path_total += node.edges[room]
         print("\n*** You have chosen: {0} ***\n".format(current_room))
